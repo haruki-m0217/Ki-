@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'pages/home_page.dart';
+import 'pages/image_upload_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,19 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ki-MAP',
+      title: '清高万博',
       theme: ThemeData(
         primaryColor: mainColor,
         appBarTheme: AppBarTheme(
           backgroundColor: mainColor,
           foregroundColor: Colors.white,
         ),
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: mainColor),
       ),
-      home: Scaffold(
-        appBar: AppBar(title: Text('Ki-MAPホーム')),
-        body: Center(child: Text('ようこそ！')),
-      ),
+      home: HomeScreen(),
     );
   }
 }

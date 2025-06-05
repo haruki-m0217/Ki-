@@ -1,0 +1,12 @@
+name: ki_map_web
+description: A Flutter web project for Ki-MAP
+
+environment:
+  sdk: '>=2.17.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
